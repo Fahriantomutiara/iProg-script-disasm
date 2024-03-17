@@ -28,7 +28,7 @@ def decompile_cal(cal_filename):
 
     decrypted_cal = cal.get_data()
     if decrypted_cal:
-        with open(os.path.splitext(cal_filename)[0] + '_decrypted.bin', 'wb') as f:
+        with open(os.path.splitext(cal_filename)[0] + '_decrypted.cal', 'wb') as f:
             f.write(decrypted_cal)
 
 
